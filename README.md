@@ -26,9 +26,9 @@ flowchart LR
   EntriesB --> OasB
   EntriesC --> OasC
 
-  subgraph "Domain A"
-    EntriesA
-    OasA
+  subgraph "Domain C"
+    EntriesC
+    OasC
   end
 
   subgraph "Domain B"
@@ -36,9 +36,9 @@ flowchart LR
     OasB
   end
 
-  subgraph "Domain C"
-    EntriesC
-    OasC
+  subgraph "Domain A"
+    EntriesA
+    OasA
   end
 ```
 

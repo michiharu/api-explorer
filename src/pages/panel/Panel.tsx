@@ -1,11 +1,18 @@
 import React from 'react';
-import '@pages/panel/Panel.css';
+import { Providers } from './Providers';
+import { AppBar as MuiAppBar, Toolbar, Typography } from '@mui/material';
 
 const Panel: React.FC = () => {
   return (
-    <div className="container">
-      <h1 className="">Dev Tools Panel</h1>
-    </div>
+    <Providers>
+      <MuiAppBar position="fixed">
+        <Toolbar variant="dense">
+          <Typography variant="h6" color="inherit" component="div">
+            API Explorer
+          </Typography>
+        </Toolbar>
+      </MuiAppBar>
+    </Providers>
   );
 };
 
